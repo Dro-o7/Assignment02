@@ -10,6 +10,25 @@ body{
 :root{
     --primary-color-orng: #E6533C;
 }
+/* shared styles */
+.global-btn-1{
+    background-color: var(--primary-color-orng);
+    border-radius: 42px;
+    color: white;
+    border: 1px white solid;
+    width: 224px;
+    height: 50px;
+    font-size: 18px;
+}
+.global-btn-2{
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 42px;
+    color: white;
+    border: 1px white solid;
+    width: 224px;
+    height: 50px;
+    font-size: 18px;
+}
 /* navbar */
 nav{
     display: flex;
@@ -69,4 +88,34 @@ nav .home{
   font-style: normal;
   font-size: 100px;
   color: var(--primary-color-orng);
+}
+.banner-desc p{
+    color: grey;
+}
+.banner-img{
+    background-image: url(/images/Images\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 550px;
+}
+.banner-img button{
+    height: 100px;
+    width: 165px;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 12px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-img button h3{
+    font-size: 24px;
+}
+.banner-btn-1{
+    position: absolute;
+    transform: translate(10%, 290%);
+}
+.banner-btn-2{
+    position: absolute;
+    transform: translate(170%, 130%);
 }
