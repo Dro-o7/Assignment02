@@ -65,6 +65,9 @@ nav ul{
     
 
 }
+nav .brgr{
+    display: none;
+}
 nav .home{
     background-color: var(--primary-color-orng);
     border-radius: 7px;
@@ -100,10 +103,11 @@ nav .home{
     margin-bottom: 10px;
 }
 .banner-img{
-    background-image: url(../images/banner.png);
+    /* background-image: url(../images/banner.png); */
     background-repeat: no-repeat;
     background-position: center;
     width: 550px;
+    position: relative;
 }
 .banner-img button{
     height: 100px;
@@ -120,11 +124,11 @@ nav .home{
 }
 .banner-btn-1{
     position: absolute;
-    transform: translate(10%, 290%);
+    transform: translate(-10%, -190%);
 }
 .banner-btn-2{
     position: absolute;
-    transform: translate(170%, 130%);
+    transform: translate(170%, -290%);
 }
 /* part 2 */
 .pt2{
@@ -285,4 +289,69 @@ footer > p{
     color: grey;
 }
 
+@media (max-width: 576px){
+    nav{
+        margin: 5px 10px;
+    }
+    nav ul{
+        display: none;
+    }
+    nav .brgr{
+        display: flex;
+    }
+    .banner{
+        flex-direction: column;
+        margin: 5px 10px;
+    }
+    .banner-desc{
+        text-align: center;
+        margin: 5px 10px;
+        width: 440px;
+    }
+    .banner-img{
+        flex-direction: column;
+    }
+    .pt2{
+        margin: 5px 20px;
+    }
+    .pt2 ul{
+        flex-direction: column;
+    }
+    .join-now{
+        flex-direction: column;
+        margin: 5px 20px;
+        gap: 20px;
+    }
+    .bmicalc{
+        flex-direction: column;
+        margin: 5px 20px;
+        align-items: center;
+    }
+    .chart{
+        margin: 5px 20px;
+    }
+    .calc{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 5px;
+    }
+    .inpFp{
+        width: 280px;
+    }
+    .team{
+        margin: 5px 20px;
+    }
+    .timg{
+        grid-template-columns: 1fr;
+    }
+    footer{
+        flex-direction: column;
+        margin: 5px 20px;
+    }
+    footer .top{
+        flex-direction: column;
+        margin: 5px 20px;
+    }
 
+}
