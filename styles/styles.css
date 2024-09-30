@@ -29,6 +29,10 @@ body{
     height: 50px;
     font-size: 18px;
 }
+/* header */
+header{
+    background: linear-gradient(black, rgb(37, 37, 37));
+}
 /* navbar */
 nav{
     display: flex;
@@ -73,7 +77,7 @@ nav .home{
     justify-content: space-between;
     margin: 0px 190px;
     gap: 90px;
-    background: linear-gradient(black, rgb(37, 37, 37));
+    /* background: linear-gradient(black, rgb(37, 37, 37)); */
 }
 .banner-desc{
     width: 520px;
@@ -92,8 +96,11 @@ nav .home{
 .banner-desc p{
     color: grey;
 }
+.banner-desc button{
+    margin-bottom: 10px;
+}
 .banner-img{
-    background-image: url(/images/Images\ 2.png);
+    background-image: url(/images/banner.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 550px;
@@ -118,4 +125,55 @@ nav .home{
 .banner-btn-2{
     position: absolute;
     transform: translate(170%, 130%);
+}
+/* part 2 */
+.pt2{
+    text-align: center;
+    margin: 50px 190px;
+}
+.pt2 ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.pt2 p{
+    color: grey;
+}
+.pt2 h1{
+    font-weight: 900;
+    font-size: 48px;
+}
+.pt2 h4{
+    font-size: 28px;
+    color: var(--primary-color-orng);
+}
+.pt2 li img{
+    border-radius: 50%;
+    border: 4px solid grey;
+}
+/* part 3 */
+.join-now{
+    margin: 25px 190px;
+    display: flex;
+    justify-content: space-between;
+    gap: 165px;
+    background-color: rgba(46, 46, 46,.5);
+    padding: 32px;
+    border-radius: 18px;
+}
+.join-now desc{
+    margin-left: 60px;
+}
+.join-now h1{
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 32px;
+}
+.join-now p{
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+.join-now img{
+    border-radius: 12px;
 }
