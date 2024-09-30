@@ -62,8 +62,6 @@ nav ul{
     border-radius: 15px;
     align-items: center;
     height: 38px;
-    
-
 }
 nav .brgr{
     display: none;
@@ -103,10 +101,8 @@ nav .home{
     margin-bottom: 10px;
 }
 .banner-img{
-    /* background-image: url(../images/banner.png); */
     background-repeat: no-repeat;
     background-position: center;
-    width: 550px;
     position: relative;
 }
 .banner-img button{
@@ -290,6 +286,9 @@ footer > p{
 }
 
 @media (max-width: 576px){
+    /* *{
+        border: 1px solid tomato;
+    } */
     nav{
         margin: 5px 10px;
     }
@@ -306,29 +305,32 @@ footer > p{
     .banner-desc{
         text-align: center;
         margin: 5px 10px;
-        width: 440px;
+        width: 350px;
     }
     .banner-img{
         flex-direction: column;
     }
+    .banner-btn-2{
+        transform: translate(100%, -190%);
+    }
     .pt2{
-        margin: 5px 20px;
+        margin: 5px 10px;
     }
     .pt2 ul{
         flex-direction: column;
     }
     .join-now{
         flex-direction: column;
-        margin: 5px 20px;
+        margin: 5px 10px;
         gap: 20px;
     }
     .bmicalc{
         flex-direction: column;
-        margin: 5px 20px;
+        margin: 5px 10px;
         align-items: center;
     }
     .chart{
-        margin: 5px 20px;
+        margin: 5px 10px;
     }
     .calc{
         text-align: center;
@@ -340,18 +342,18 @@ footer > p{
         width: 280px;
     }
     .team{
-        margin: 5px 20px;
+        margin: 5px 10px;
     }
     .timg{
         grid-template-columns: 1fr;
     }
     footer{
         flex-direction: column;
-        margin: 5px 20px;
+        margin: 5px 10px;
     }
     footer .top{
         flex-direction: column;
-        margin: 5px 20px;
+        margin: 5px 10px;
     }
 
 }
